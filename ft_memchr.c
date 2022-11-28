@@ -6,7 +6,7 @@
 /*   By: agallet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 16:43:55 by agallet           #+#    #+#             */
-/*   Updated: 2022/11/07 21:15:35 by agallet          ###   ########.fr       */
+/*   Updated: 2022/11/24 14:41:34 by agallet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	char	*str;
 	size_t	i;
 
 	i = 0;

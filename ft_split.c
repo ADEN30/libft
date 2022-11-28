@@ -6,7 +6,7 @@
 /*   By: agallet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 14:24:39 by agallet           #+#    #+#             */
-/*   Updated: 2022/11/22 13:23:05 by agallet          ###   ########.fr       */
+/*   Updated: 2022/11/24 14:47:27 by agallet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ static char	*ft_split_count_char(char *str, char c, size_t *_nbChar)
 	return (str);
 }
 
-static int	ft_clear(char **str)
+static char	**ft_clear(char **str)
 {
 	int	_i;
 
@@ -56,6 +56,7 @@ static int	ft_clear(char **str)
 	while (str[_i])
 		free(str[_i++]);
 	free(str);
+	return (0);
 }
 
 char	**ft_split(char const *s, char c)
